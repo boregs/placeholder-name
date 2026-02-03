@@ -13,5 +13,5 @@ CREATE TABLE placeholder.users (
 	date_of_birth DATE,
 	UNIQUE username TEXT, 
 	UNIQUE email TEXT, 
-	nationality VARCHAR[2]
+	nationality VARCHAR(2)
 	);
