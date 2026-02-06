@@ -20,9 +20,8 @@ CREATE TABLE placeholder.Users (
 -- verificar a tabela abaixo depois
 
 CREATE TABLE placeholder.UserAccessLogs (
-    Id SERIAL PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     UserId VARCHAR(100),
     PageAccessed VARCHAR(255) NOT NULL,
     AccessDate TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    IpAddress VARCHAR(45)
 );
