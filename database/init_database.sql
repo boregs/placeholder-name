@@ -1,6 +1,6 @@
-CREATE SCHEMA placeholder;
+CREATE SCHEMA website;
 
-CREATE TABLE placeholder.Users (
+CREATE TABLE website.Users (
 	id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY, 
 	first_name VARCHAR(20),
 	last_name VARCHAR(20),
@@ -11,7 +11,7 @@ CREATE TABLE placeholder.Users (
 	nationality VARCHAR(2)
 	);
 
-CREATE TABLE placeholder.UserAccessLogs (
+CREATE TABLE website.UserAccessLogs (
     id SERIAL PRIMARY KEY,
     User_Id VARCHAR(100),
     Page_Accessed VARCHAR(255) NOT NULL,
